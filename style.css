@@ -5,7 +5,9 @@
   --clr-white: #ffffff;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -32,9 +34,11 @@
 }
 
 body {
+  font-family: Figtree, sans-serif;
   background-color: var(--clr-yellow);
-  font-size: 14px;
+  font-size: 0.9rem;
   line-height: 150%;
+  padding: 1rem;
 }
 
 main {
@@ -76,7 +80,7 @@ main {
 
 .card-title {
   font-family: Figtree-ExtraBold;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 12px;
 }
 
@@ -87,7 +91,7 @@ main {
 
 .card-description {
   font-family: Figtree-SemiBold;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--clr-gray-500);
   margin-bottom: 24px;
 }
@@ -106,7 +110,7 @@ main {
   position: fixed;
   bottom: 0;
   width: 100%;
-  font-size: 11px;
+  font-size: 0.7rem;
   text-align: center;
 }
 .attribution a {
@@ -122,12 +126,12 @@ main {
   }
   .card-tag,
   .card-date {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .card-title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .card-description {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 }
