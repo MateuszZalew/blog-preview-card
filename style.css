@@ -1,0 +1,133 @@
+:root {
+  --clr-yellow: #f4d04e;
+  --clr-gray-500: #6b6b6b;
+  --clr-gray-950: #111111;
+  --clr-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Figtree-ExtraBold;
+  src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Figtree-SemiBold;
+  src: url(assets/fonts/static/Figtree-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Figtree-Italic;
+  src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Figtree;
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: var(--clr-yellow);
+  font-size: 14px;
+  line-height: 150%;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid var(--clr-gray-950);
+  max-width: 384px;
+  background-color: var(--clr-white);
+  padding: 24px;
+  border-radius: 20px;
+  color: var(--clr-gray-950);
+  filter: drop-shadow(6px 6px var(--clr-gray-950));
+}
+
+.card-blog-image {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-tag {
+  font-family: Figtree-ExtraBold;
+  display: inline-block;
+  max-width: 100px;
+  padding: 4px 12px;
+  background-color: #f4d04e;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.card-date {
+  font-family: Figtree-SemiBold;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-family: Figtree-ExtraBold;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.card-title:hover {
+  color: #f4d04e;
+  cursor: pointer;
+}
+
+.card-description {
+  font-family: Figtree-SemiBold;
+  font-size: 16px;
+  color: var(--clr-gray-500);
+  margin-bottom: 24px;
+}
+
+.author-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-container span {
+  font-family: Figtree-ExtraBold;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 475px) {
+  main {
+    margin: 0 24px;
+  }
+  .card-blog-image {
+    width: 100%;
+  }
+  .card-tag,
+  .card-date {
+    font-size: 12px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .card-description {
+    font-size: 14px;
+  }
+}
